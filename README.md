@@ -1,4 +1,5 @@
 # Instacart Market Basket Analysis
+## Problem Statement
 The retail grocery industry in the United States faces a precarious economic environment. Due 
 primarily to competition from warehouse clubs, supercenters, and e-commerce, retail grocery sales 
 have underperformed the U.S. retail sector and the overall U.S. economy, and employment growth 
