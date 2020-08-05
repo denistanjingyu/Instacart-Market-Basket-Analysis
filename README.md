@@ -1,4 +1,7 @@
 # Instacart Market Basket Analysis
+
+![Instacart-explanation_500](https://user-images.githubusercontent.com/45563371/89464234-b20b9a00-d7a2-11ea-8db6-02325003f06d.jpg)
+
 ## Problem Statement
 The retail grocery industry in the United States faces a precarious economic environment. Due 
 primarily to competition from warehouse clubs, supercenters, and e-commerce, retail grocery sales 
