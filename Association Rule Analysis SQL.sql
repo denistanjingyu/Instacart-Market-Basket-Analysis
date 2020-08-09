@@ -1,21 +1,35 @@
-Create database project1;
+CREATE database project1;
 
-select* from project1.resultba2;
+SELECT * 
+FROM project1.resultba2;
 
+SELECT itemA, itemB, supportAB, confidenceAtoB 
+ FROM project1.resultba2 
+ WHERE supportAB > 0.02
+ AND confidenceAtoB > 0.2
+ ORDER BY confidenceAtoB DESC;
 
-select itemA, itemB, supportAB, confidenceAtoB from project1.resultba2 where supportAB> 0.02
- and confidenceAtoB > 0.2
- order by confidenceAtoB desc;
+SELECT itemA, itemB, supportAB, confidenceAtoB 
+ FROM project1.resultba2 
+ WHERE supportAB> 0
+ AND confidenceAtoB > 0 
+ AND itemA= "Coconut Chia Bar"
+ ORDER BY confidenceAtoB DESC;
 
-select itemA, itemB, supportAB, confidenceAtoB from project1.resultba2 where supportAB> 0
- and confidenceAtoB > 0 and itemA= "Coconut Chia Bar"
- order by confidenceAtoB desc;
+CREATE view CartItems1( itemA, itemB, supportAB, confidenceAtoB) AS 
+ SELECT itemA, itemB, supportAB, confidenceAtoB 
+ FROM project1.resultba2 
+ WHERE supportAB > 0
+ AND confidenceAtoB > 0 
+ AND itemA = "Coconut Chia Bar" 
+ OR itemA =  "Chocolate Sea Salt" 
+ OR itemA = "Peanut Butter Bar"
+ ORDER BY confidenceAtoB DESC;
 
-create view CartItems1( itemA, itemB, supportAB, confidenceAtoB)
-as select itemA, itemB, supportAB, confidenceAtoB from project1.resultba2 where supportAB> 0
- and confidenceAtoB > 0 and itemA= "Coconut Chia Bar" or itemA =  "Chocolate Sea Salt" or itemA= "Peanut Butter Bar"
- order by confidenceAtoB desc;
-
-select* from CartItems1 where itemB != "Coconut Chia Bar" and itemB !=  "Chocolate Sea Salt" and itemB != "Chocolate Peanut Butter"
-order by confidenceAtoB desc limit 3;
-
+SELECT * 
+ FROM CartItems1 
+ WHERE itemB != "Coconut Chia Bar" 
+ AND itemB !=  "Chocolate Sea Salt" 
+ AND itemB != "Chocolate Peanut Butter"
+ ORDER BY confidenceAtoB DESC 
+ LIMIT 3;
