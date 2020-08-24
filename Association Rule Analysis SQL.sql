@@ -22,7 +22,7 @@ AND confidenceAtoB > 0
 AND itemA = "Coconut Chia Bar"
 ORDER BY confidenceAtoB DESC;
 
-CREATE view CartItems1(itemA, 
+CREATE VIEW CartItems1(itemA, 
                        itemB, 
                        supportAB, 
                        confidenceAtoB) AS 
