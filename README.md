@@ -1,6 +1,6 @@
 # Instacart Market Basket Analysis
 
-![Instacart-explanation_500](https://user-images.githubusercontent.com/45563371/89464234-b20b9a00-d7a2-11ea-8db6-02325003f06d.jpg)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/89464234-b20b9a00-d7a2-11ea-8db6-02325003f06d.jpg" /></p>
 
 ## Problem Statement
 The retail grocery industry in the United States faces a precarious economic environment. Due 
@@ -25,20 +25,20 @@ efficiency and productivity, providing value for all stakeholders.
 Table of Contents :bookmark_tabs:
 =================
 - [Executive Summary](#executive-summary)
-- [Instacart Overview](#introduction)
-- [Instacart Business Model](#business-analysis)
-- [Online Grocery Sector Opportunities](#data-set)
-- [Business Problem](#analytics-approach)
-- [Proposed Approach & Desired Outcomes](#data-preparation-and-understanding)
-- [Data Exploration](#exploratory-data-analysis)
-- [Analytics Solution](#model-construction-and-evaluation)
-- [Analytical Solution Performance Measures](#proposed-business-recommendations)
-- [Model Improvements and Future Advancements](#limitations)
-- [Analytical Solution Target](#conclusion)
-- [Analytical Solution Demonstration](#references)
-- [Monitoring of Analytical Solution](#appendices)
-- [Conclusion](#appendices)
-- [References](#appendices)
+- [Instacart Overview](#instacart-overview)
+- [Instacart Business Model](#instacart-business-model)
+- [Online Grocery Sector Opportunities](#online-grocery-sector-opportunities)
+- [Business Problem](#business-problem)
+- [Proposed Approach & Desired Outcomes](#proposed-approach--desired-outcomes)
+- [Data Exploration](#data-exploration)
+- [Analytics Solution](#analytics-solution)
+- [Analytical Solution Performance Measures](#analytical-solution-performance-measures)
+- [Model Improvements and Future Advancements](#model-improvements-and-future-advancements)
+- [Analytical Solution Target](#analytical-solution-target)
+- [Analytical Solution Demonstration](#analytical-solution-demonstration)
+- [Monitoring of Analytical Solution](#monitoring-of-analytical-solution)
+- [Conclusion](#conclusion)
+- [References](#references)
 - [Appendices](#appendices)
 - [Code and Resources Used](#code-and-resources-used)
 
@@ -55,18 +55,18 @@ Instacart Inc. is a US based company which operates a crowdsourcing platform tha
 ## Instacart Business Model
 Instacart operates as a four-sided marketplace, as shown in figure 1, with multiple stakeholders to coordinate with. The first two sides are the consumer and the personal shopper. The consumer uses the application to shop for groceries and have them delivered. The personal shopper goes to the store, purchase the groceries ordered by the consumer and delivers them straight to the doorstep. The next two sides are the retailers and the products. Instacart has established partnerships with 160 different retailers. Several of these retailers are household names such as Costco, Wholefoods and Target. These retailers already possess a huge and loyal customer base and they are allowing Instacart to access both their customer base and inventory. The last side refers to the products and they are closely interlinked with the retailers. The retailers own these products in their stores and warehouses. Instacart can provide value on the advertising side through its data science domain. By providing more relevant product offerings to the consumers through the application, increased sales conversion rate can be achieved. 
 
-![image](https://user-images.githubusercontent.com/45563371/115538196-36b92c80-a2ce-11eb-9718-fb29558471f7.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538196-36b92c80-a2ce-11eb-9718-fb29558471f7.png" /></p>
 
 ## Online Grocery Sector Opportunities
 The online grocery sector is set to disrupt the bricks-and-mortar grocery scene, but the extent and nature of disruption depends from market to market. In some markets, companies provide online-only home delivery options with no physical stores at all. In other markets, companies provide a mix of click-and-collect and delivery models. However, it is expected that bricks-and-mortar stores are going to face significant challenges moving forward with all these more convenient options surfacing from online groceries.
 
 The online grocery scene has experienced rapid growth in recent years with a US report stating a 50% growth in online grocery sales 2018. However, the number of shoppers purchasing groceries online remains low with only 11% of people reported to have purchased groceries online for pickup or home-delivery at least once a month in a Gallup survey and 81% stating to have never purchased groceries online (Digital Commerce 360, 2019). Although the sector remains small, online grocery sales has doubled in sales from 2016 to 2018 and is projected to grow by 17% to 19% each year over the next few years (Lipsman, 2019).
 
-![image](https://user-images.githubusercontent.com/45563371/115538252-45074880-a2ce-11eb-8122-447ba90b5881.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538252-45074880-a2ce-11eb-8122-447ba90b5881.png" /></p>
 
 With the rapid growth of the online grocery scene, major players such as Amazon and Walmart have been ramping up their efforts in their pickup and delivery services in a bid to latch on this rising trend. In August 2019, research found that Walmart’s online grocery operations had 62% more customers than Instacart (Stine, 2019), which holds a 14.5% market share in the online grocery industry (Pace, 2019). 
 
-![image](https://user-images.githubusercontent.com/45563371/115538276-4a649300-a2ce-11eb-8fd2-9198e08c9327.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538276-4a649300-a2ce-11eb-8fd2-9198e08c9327.png" /></p>
 
 In this small and competitive sector, maximizing sales and customer retention are crucial to success for Instacart, a company that solely relies on online grocery sales for revenue.
 
@@ -79,7 +79,7 @@ The competitive landscape and low profit margins stress the importance of Instac
 
 Being a service-based company, customer satisfaction lies at the heart of Instacart’s business. In a digital landscape, the need to better understand user needs and behaviors in designing the best user experience has become increasingly important in driving sales and establishing brand loyalty. Instacart currently uses analytics for various reasons such as their order fulfilment algorithm to drive operational efficiency and their tailored compensation system. However, in terms of customer retention and maximizing sales volume there is lack of a clear strategy which poses a significant risk to its business. Given that only 11% of shoppers purchase groceries online, a low market share of 14.5% and a low margin of 2%, it is crucial for Instacart to not only the retail grocery industry in the United States faces a precarious economic environment. Due primarily to competition from warehouse clubs, supercenters, and e-commerce, retail grocery sales have underperformed the U.S. retail sector and the overall U.S. economy, and employment growth in the industry has been stagnant. Yet, a large proportion of consumers maintain a strong preference for shopping at retail grocery stores, and total grocery industry sales and employment still exceed sales and employment at warehouse clubs/supercenters and e-commerce retailers. To compete in this setting, many retail grocers are turning to third-party online grocery delivery services offering online shopping and same-day grocery delivery, the largest of which is Instacart.
 
-![image](https://user-images.githubusercontent.com/45563371/115538368-623c1700-a2ce-11eb-9226-b245cdccdb39.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538368-623c1700-a2ce-11eb-9226-b245cdccdb39.png" /></p>
 
 ## Proposed Approach & Desired Outcomes
 With the massive amount of data on Instacart’s existing system and mobile applications, Instacart could predict what a customer is likely to purchase based on his/her past transactions and activities on Instacart’s e-commerce platform. We propose to explore the associative relationship between Instacart’s products based on past transaction records and make recommendations to customers accordingly. 
@@ -98,34 +98,36 @@ After the implementation of the program, we expect to see
 
 where the customer retention rate is calculated by the formula: 
 
-Customer Retention Rate = ((No. of Customers at End of Period – No. of Customers Acquired During Period) / No. of Customers at Start of Period)) X 100%
+<p align="center">
+  Customer Retention Rate = ((No. of Customers at End of Period – No. of Customers Acquired During Period) / No. of Customers at Start of Period)) X 100%
+</p>
 
 ## Data Exploration
 We begin our analysis with preliminary data exploration to derive understanding with regards to the following questions to further optimize the implementation of our analytics solution:
 
 1.	Which product accounts for the most sales?
-2.	
+
 3.	What time should our promotions be pushed out?
-4.	
+
 5.	Which product are most frequently reordered?
-6.	
+
 7.	Which set of items are most frequently bought together?
-8.	
+
 As can be seen from figure 5, fruits and vegetables are most frequently ordered products on Instacart. In fact, organic fruits and vegetables are seemingly popular amongst customers.  Armed with this knowledge, association rules and further data exploration could be performed to determine which organic products can be packaged and marketed together with these organic fruits and vegetables.
 
-![image](https://user-images.githubusercontent.com/45563371/115538473-7f70e580-a2ce-11eb-998b-9f066c45a1e5.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538473-7f70e580-a2ce-11eb-998b-9f066c45a1e5.png" /></p>
 
 From figure 6, we can see that majority of Instacart’s sales are aggregated between 10 a.m. to 5 p.m. This insight can be used to time our promotion and push notifications on promotions during high volume period each day.  This would maximize the conversion of marketing efforts through the application to boost sales.  
 
-![image](https://user-images.githubusercontent.com/45563371/115538503-88fa4d80-a2ce-11eb-934d-36b77e77573b.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538503-88fa4d80-a2ce-11eb-934d-36b77e77573b.png" /></p>
 
 Another trend that Instacart can focus on would be the products that have a high chance of being reordered by customers. Instacart can use this information and push these items as “Popular items other customers buy”. By using this information, Instacart can also easily narrow down the products to recommend to existing customers as well as new ones. On the supplier side, Instacart can also make sure that on the days the customers usually reorder the products, for example, the 2% Lactose Free Milk, there would be enough stock for them. Instacart can also easily use the top reordered products as a baseline to form their association rule in order to easily bundle the products that customers usually reorder together to improve the overall customer experience on the app. This will ensure that customers will continue using the app to purchase their healthy milk which will in turn help to promote customer retention. 
 
-![image](https://user-images.githubusercontent.com/45563371/115538533-91528880-a2ce-11eb-962d-9196a39c784a.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538533-91528880-a2ce-11eb-962d-9196a39c784a.png" /></p>
 
 From figure 8, we can sort the popularity of item pairs in descending order. Hence, Instacart can choose to focus on item pairs with high occurrence in our analytical model below or bundle the items together to be sold as a package. These actions may improve the overall customer experience as customers will not have the hassle of finding all the different items when they can just buy the recommended packages. Sales can also be improved as bundling of goods has a high correlation with impulse purchases (Hemmis, 2017). An increase in the number of impulse purchases will inadvertently increase the sales revenue. 
 
-![image](https://user-images.githubusercontent.com/45563371/115538558-97e10000-a2ce-11eb-81c1-15b3768b1847.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538558-97e10000-a2ce-11eb-81c1-15b3768b1847.png" /></p>
 
 ## Analytics Solution
 Our project focuses on the use of association rules to understand consumer behavior that defines in-app user experience and promotions in order to maximize items purchased per transaction and customer retention. The analytics solution is premised on using insight derived through association rules to determine the in-app item arrangement and recommendations by using items added to cart to predict the next item they are likely to purchase as well as the creation of promotion bundles. 
@@ -134,13 +136,13 @@ Association Ruling will be used to resolve our business problem and discover sal
 
 Via the use of Association Rule Mining with a min support of A & B at 2%, we would generate the table shown below (sort by descending Confidence AtoB). 
 
-![image](https://user-images.githubusercontent.com/45563371/115538674-b7782880-a2ce-11eb-827d-4979e34aea8a.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538674-b7782880-a2ce-11eb-827d-4979e34aea8a.png" /></p>
 
-![image](https://user-images.githubusercontent.com/45563371/115538807-d8d91480-a2ce-11eb-928a-95650228eb82.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538807-d8d91480-a2ce-11eb-928a-95650228eb82.png" /></p>
 
 In our analysis, we found that the lift for most of the association rules generated are more than 1 which indicates that the purchase of item A increases the likelihood of them purchasing item B. We further deduce that items that are similar in names have a much higher confidence association rule than items that are dissimilar in names. This implies customers tend to purchase multiple products of the same brand in a single transaction. Instacart should therefore group products of similar nature and optimize the in-app arrangement of items based on the association rules. However, these association rules are rather self-explanatory since products that are similar in nature are naturally likely to be received in a similar fashion. We further sought for rules associating products of different types and brands for a more comprehensive product recommendation system.
 
-![image](https://user-images.githubusercontent.com/45563371/115538865-e7bfc700-a2ce-11eb-8e21-3e7ab77da608.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/45563371/115538865-e7bfc700-a2ce-11eb-8e21-3e7ab77da608.png" /></p>
 
 The above association rule is an example of dissimilar products with a high confidence level and lift. These are association rules which are exceptionally insightful for companies. Association between similar products are intuitive to management but unique association between dissimilar products are often overlooked. These association rules could be used to pilot new promotions and recommendations for cart optimization.
 
