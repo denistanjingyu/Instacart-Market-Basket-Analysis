@@ -25,17 +25,20 @@ efficiency and productivity, providing value for all stakeholders.
 Table of Contents :bookmark_tabs:
 =================
 - [Executive Summary](#executive-summary)
-- [Introduction](#introduction)
-- [Business Analysis](#business-analysis)
-- [Data Set](#data-set)
-- [Analytics Approach](#analytics-approach)
-- [Data Preparation and Understanding](#data-preparation-and-understanding)
-- [Exploratory Data Analysis](#exploratory-data-analysis)
-- [Model Construction and Evaluation](#model-construction-and-evaluation)
-- [Proposed Business Recommendations](#proposed-business-recommendations)
-- [Limitations](#limitations)
-- [Conclusion](#conclusion)
-- [References](#references)
+- [Instacart Overview](#introduction)
+- [Instacart Business Model](#business-analysis)
+- [Online Grocery Sector Opportunities](#data-set)
+- [Business Problem](#analytics-approach)
+- [Proposed Approach & Desired Outcomes](#data-preparation-and-understanding)
+- [Data Exploration](#exploratory-data-analysis)
+- [Analytics Solution](#model-construction-and-evaluation)
+- [Analytical Solution Performance Measures](#proposed-business-recommendations)
+- [Model Improvements and Future Advancements](#limitations)
+- [Analytical Solution Target](#conclusion)
+- [Analytical Solution Demonstration](#references)
+- [Monitoring of Analytical Solution](#appendices)
+- [Conclusion](#appendices)
+- [References](#appendices)
 - [Appendices](#appendices)
 - [Code and Resources Used](#code-and-resources-used)
 
@@ -57,7 +60,7 @@ Instacart Inc. is a US based company which operates a crowdsourcing platform tha
 
 ## Proposed Approach & Desired Outcomes
 
-## Data exploration
+## Data Exploration
 
 ## Analytics Solution
 
