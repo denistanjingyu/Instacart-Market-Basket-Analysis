@@ -1,5 +1,4 @@
 # Instacart Market Basket Analysis
-
 <p align="center"><img src="https://user-images.githubusercontent.com/45563371/89464234-b20b9a00-d7a2-11ea-8db6-02325003f06d.jpg" /></p>
 
 ## Problem Statement
